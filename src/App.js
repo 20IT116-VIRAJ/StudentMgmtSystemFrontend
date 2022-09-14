@@ -33,7 +33,10 @@ function App() {
               path="student/:studentId"
               element={<Student showAlert={showAlert} />}
             />
-            
+            <Route
+              path="listStudents"
+              element={<StudentList showAlert={showAlert} />}
+            />
           </Routes>
         </Container>
         <Footer />
